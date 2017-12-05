@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
   data.each do |category, category_data|
     category_data.each do |attribute, pigeons| #creates containers
       pigeons.each do |pigeon|
-        pigeon_list[pigeon] = {}
+        if !pigeon_list.keys.include?(pigeon)
+          pigeon_list[pigeon] = {}
       end
     end
     pigeon_list.each do |pigeon, pigeon_data| #inserts data
