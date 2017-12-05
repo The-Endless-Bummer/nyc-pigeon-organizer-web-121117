@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
       pigeons.each do |pigeon|
         if !pigeon_list.keys.include?(pigeon)
           pigeon_list[pigeon] = {}
+        end
       end
     end
     pigeon_list.each do |pigeon, pigeon_data| #inserts data
